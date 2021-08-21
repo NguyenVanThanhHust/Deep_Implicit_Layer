@@ -65,6 +65,7 @@ def epoch(loader, model, opt=None, monitor=None):
 
 
 for i in range(10):
+    print("epoch {}".format(i))
     if i == 5:
         opt.param_groups[0]["lr"] = 1e-2
 
